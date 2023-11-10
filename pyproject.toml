@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "simple-gcp-project-switcher"
+version = "0.1.5"
+description = "A simple GCP project switcher"
+authors = ["Guillaume W <guillaume.luc.wagner@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pswitch"}]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pswitch = 'pswitch.console:main'

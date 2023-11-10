@@ -1,11 +1,17 @@
 import sys, json, os
 import subprocess
-search = sys.argv[1]
 
 def main():
+    try:
+        search = sys.argv[1]    
+    except:
+        search = ""
     pr = subprocess.check_output(f'gcloud projects list --filter={search} --format="json(name,projectId,parent.id)"', shell=True)
     projects = json.loads(pr)
     for id, project in enumerate(projects):
-        print(f'[{id}]: {project["name"]} ({project["projectId"]})')
+        print(f'[{id}] : {project["name"]} ({project["projectId"]})')
     projNum = input("Enter project number to switch to: ")
-    os.system(f'gcloud config set project "{projects[int(projNum)]["projectId"]}"')
+    try:
+        os.system(f'gcloud config set project "{projects[int(projNum)]["projectId"]}"')
+    except:
+        print("Invalid Project Number")
