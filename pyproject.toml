@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "simple-gcp-project-switcher"
-version = "0.1.9"
+version = "0.1.10"
 description = "A simple GCP project switcher"
 authors = ["Guillaume W <guillaume.luc.wagner@gmail.com>"]
 readme = "README.md"
@@ -9,8 +9,12 @@ license = "MIT"
 homepage = "https://github.com/faahren/simple_gcp_project_switcher.git"
 
 [tool.poetry.dependencies]
-python = "^3"
+python = ">=3.7"
+click = "^8.1.7"
 
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
 
 [build-system]
 requires = ["poetry-core"]

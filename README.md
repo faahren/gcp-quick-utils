@@ -25,13 +25,23 @@ You will see the following output to choose your project rom:
 
 ```
 $ pswitch mycompanyName
-[0] : mycompany-terraformtests (mycompany-terraform)
-[1] : mycompany-etl (mycompany-etl)
-[2] : mycompany-guillaume-pde (mycompany-guillaume-pde)
-[3] : mycompany-chatbot (mycompany-chatbot)
-[4] : mycompany-ga4 (mycompany-ga4-lehoublon-flo)
-[5] : mycompany-airbyte (mycompany-airbyte)
+[0] : mycompany-380102 (mycompany)
+[1] : mycompany-airbyte (mycompany-airbyte)
+[2] : mycompany-chatbot (mycompany-chatbot)
+[3] : mycompany-etl (mycompany-etl)
+[4] : mycompany-ga4-lehoublon-flo (mycompany-ga4-lehoublon-flo)
+[5] : mycompany-guillaume-pde (mycompany-guillaume-pde)
 [6] : mycompany-n8n (mycompany-n8n)
-[7] : mycompany (mycompany-380132)
+[7] : mycompany-terraform (mycompany-terraform)
 Enter project number to switch to: 
+```
+
+If you prefer ordering by name than ordering by id
+```
+pswitch --name
+```
+
+If you want to automatically switch to the first found project
+```
+pswitch searchTerm -a
 ```
