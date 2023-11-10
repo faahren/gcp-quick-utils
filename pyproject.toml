@@ -1,11 +1,12 @@
 [tool.poetry]
 name = "simple-gcp-project-switcher"
-version = "0.1.6"
+version = "0.1.8"
 description = "A simple GCP project switcher"
 authors = ["Guillaume W <guillaume.luc.wagner@gmail.com>"]
 readme = "README.md"
 packages = [{include = "pswitch"}]
 license = "MIT"
+homepage = "https://github.com/faahren/simple_gcp_project_switcher.git"
 
 [tool.poetry.dependencies]
 python = "^3"
