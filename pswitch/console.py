@@ -1,7 +1,8 @@
 import sys, json, os
 import subprocess
 
-def main():
+
+def switch_project():
     try:
         search = sys.argv[1]    
     except:
@@ -15,3 +16,11 @@ def main():
         os.system(f'gcloud config set project "{projects[int(projNum)]["projectId"]}"')
     except:
         print("Invalid Project Number")
+
+def main():
+    try:
+        switch_project()
+    except SystemExit:
+        print("Program exited")
+    except KeyboardInterrupt:
+        print("Program exited")
