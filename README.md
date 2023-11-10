@@ -1,4 +1,4 @@
-# simple_gcp_project_switcher
+# Simple GCP Project Project Switcher
 
 Have you ever struggled to switch between GCP projects locally ?
 Here is a simple CLI to switch between GCP projects easily.
