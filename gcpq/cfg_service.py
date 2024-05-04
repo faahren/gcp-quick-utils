@@ -31,4 +31,27 @@ def load_config():
     config["services"] = services
     return config
 
+def add_friendly_name(project):
+    cfg_file_path = get_config_file_path()
+    if not os.path.exists(cfg_file_path):
+        install_command()
+    personal_config = yaml.load(open(cfg_file_path, "r"), Loader=yaml.SafeLoader)
+    # check if key exists
+    if "projects" not in config:
+        personal_config["projects"] = []
+    
+    for proj in personal_config["projects"]:
+        if proj["projectId"] == project["projectId"]:
+            print("Project already exists in config - Updating")
+            proj.update(project)
+            with open(cfg_file_path, "w") as f:
+                f.write(yaml.dump(personal_config))
+            return
+
+    personal_config["projects"].append(project)
+    print(personal_config)
+    with open(cfg_file_path, "w") as f:
+        f.write(yaml.dump(personal_config))
+    return
+
 config = load_config()

@@ -3,11 +3,12 @@ import click
 import gcpq.console_utils as console_utils
 import gcpq.gcp_cli_service as gcp_cli_service
 import gcpq.gcp_sections_service as gcp_sections_service
-from gcpq.cfg_service import config
+from gcpq.cfg_service import config, add_friendly_name
 
 
 def switch_command(search, auto):
-    projects = gcp_cli_service.get_projects(search)
+    projects_from_friendly = [x for x in config["projects"] if search.lower() in x["friendly_name"].lower()]
+    projects = gcp_cli_service.get_projects(search, projects_from_friendly)
     if not projects:
         print("No projects found")
         return
@@ -23,7 +24,8 @@ def open_service_command(services, search, auto, force):
     if not search and not force:
         projectId = gcp_cli_service.get_current_project_id()
     else:
-        projects = gcp_cli_service.get_projects(search)
+        projects_from_friendly = [x for x in config["projects"] if search.lower() in x["friendly_name"].lower()]
+        projects = gcp_cli_service.get_projects(search, projects_from_friendly)
 
         if not projects:
             print("No projects found")
@@ -41,6 +43,22 @@ def open_service_command(services, search, auto, force):
     return
 
 
+def add_friendly_name_command(search):
+    projects = gcp_cli_service.get_projects(search)
+
+    if not projects:
+        print("No projects found")
+        return
+    projNum = console_utils.get_choice(projects)
+    project = projects[int(projNum)]
+
+    friendly_name = input("Enter friendly name for project: ")
+    project["friendly_name"] = friendly_name
+
+    add_friendly_name(project)
+
+    return
+
 
 @click.command()
 @click.argument("command", default="", required=False)
@@ -51,6 +69,10 @@ def main(command, search, auto, force):
     
     gcp_cli_service.check_if_gcloud_is_installed()
     try:
+        if command == "a":
+            add_friendly_name_command(search)
+            return
+
         if command == "s":
             switch_command(search, auto)
             return

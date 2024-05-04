@@ -3,12 +3,21 @@ import os
 import subprocess
 import json
 
-def get_projects(search):
+def get_projects(search, projects_from_friendly=[]):
     command = 'gcloud projects list --format="json(name,projectId,parent.id)"'
     if search:
         command = f'{command} --filter={search}'
     pr = subprocess.check_output(command, shell=True)
     projects = json.loads(pr)
+    for friendly_project in projects_from_friendly:
+        try:
+            existing = next(item for item in projects if item["projectId"] == friendly_project["projectId"])
+        except:
+            existing = None
+        if existing:
+            existing["friendly_name"] = friendly_project["friendly_name"]
+        else:
+            projects.append(friendly_project)
     projects = sorted(projects, key=lambda x: x["name"])
     return projects
 
