@@ -49,7 +49,6 @@ def add_friendly_name(project):
             return
 
     personal_config["projects"].append(project)
-    print(personal_config)
     with open(cfg_file_path, "w") as f:
         f.write(yaml.dump(personal_config))
     return
