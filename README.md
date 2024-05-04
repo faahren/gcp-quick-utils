@@ -24,7 +24,7 @@ If you want to search for a specific term in the project name or project id
 gcpq s searchTerm
 ```
 
-You will see the following output to choose your project rom:
+You will see the following output to choose your project from:
 
 ```
 $ gcpq mycompanyName
@@ -58,7 +58,7 @@ Open multiple services at the same time
 gcpq bq,dataform,iam,build,gcs
 ```
 
-Aliased have been created for the services. You can see them in the `services.yaml` file of the repo
+Aliases have been created for the services. You can see them in the `services.yaml` file of the repo
 
 
 Open services on a specific project (you will be able to choose the project matching the search result)
@@ -83,6 +83,13 @@ gcpq myGroupName
 ```
 
 
+### Add a friendly name for a project
+
+Add a friendly name that will help find the projects in the future. Friendly name are searchable
+```
+gcpq a searchTerm
+```
+*searchTerm is optional*
 
 # Modifying GCPQ
 

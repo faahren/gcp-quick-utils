@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gcp-quick-utils"
-version = "0.2"
+version = "0.3"
 description = "Tools to help you navigate through GCP"
 authors = ["Guillaume W <guillaume.luc.wagner@gmail.com>"]
 readme = "README.md"
