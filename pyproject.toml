@@ -1,16 +1,17 @@
 [tool.poetry]
-name = "simple-gcp-project-switcher"
-version = "0.1.10"
-description = "A simple GCP project switcher"
+name = "gcp-quick-utils"
+version = "0.2"
+description = "Tools to help you navigate through GCP"
 authors = ["Guillaume W <guillaume.luc.wagner@gmail.com>"]
 readme = "README.md"
-packages = [{include = "pswitch"}]
+packages = [{include = "gcpq"}]
 license = "MIT"
-homepage = "https://github.com/faahren/simple_gcp_project_switcher.git"
+homepage = "https://github.com/faahren/gcp-quick-utils.git"
 
 [tool.poetry.dependencies]
 python = ">=3.7"
 click = "^8.1.7"
+pyyaml = "^6.0.1"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -21,4 +22,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-pswitch = "pswitch.console:main"
+gcpq = "gcpq.main:main"

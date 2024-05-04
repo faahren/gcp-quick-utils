@@ -1,0 +1,441 @@
+# Description: This file contains the list of services and their aliases.
+- id: apis
+  aliases:
+    - APIs & Services
+    - apis
+- id: billing
+  aliases:
+    - Billing
+    - billing
+- id: iam-admin
+  aliases:
+    - IAM & Admin
+    - iam
+    - iam-admin
+- id: cloud-setup
+  aliases:
+    - Google Cloud Setup
+    - cloud-setup
+- id: gemini-admin
+  aliases:
+    - Admin for Gemini
+    - gemini-admin
+- id: compute
+  aliases:
+    - Compute Engine
+    - compute
+    - vm
+- id: kubernetes
+  aliases:
+    - Kubernetes Engine
+    - kubernetes
+    - gke
+- id: gve
+  aliases:
+    - VMware Engine
+    - gve
+- id: anthos
+  aliases:
+    - Anthos
+    - anthos
+- id: batch
+  aliases:
+    - Batch
+    - batch
+- id: storage
+  aliases:
+    - Cloud Storage
+    - storage
+    - gcs
+- id: filestore
+  aliases:
+    - Filestore
+    - filestore
+- id: transfer
+  aliases:
+    - Storage Transfer
+    - transfer
+- id: dell-emc/cloud-onefs
+  aliases:
+    - PowerScale
+    - dell-emc/cloud-onefs
+- id: netapp
+  aliases:
+    - NetApp Volumes
+    - netapp
+- id: bigquery
+  aliases:
+    - BigQuery
+    - bigquery
+    - bq
+- id: bigquery/dataform
+  aliases:
+    - dataform
+    - df
+- id: cloudpubsub
+  aliases:
+    - Pub/Sub
+    - cloudpubsub
+- id: dataflow
+  aliases:
+    - Dataflow
+    - dataflow
+- id: composer
+  aliases:
+    - Composer
+    - composer
+- id: dataproc
+  aliases:
+    - Dataproc
+    - dataproc
+- id: dataprep
+  aliases:
+    - Dataprep
+    - dataprep
+- id: data-fusion
+  aliases:
+    - Data Fusion
+    - data-fusion
+- id: looker
+  aliases:
+    - Looker
+    - looker
+- id: healthcare
+  aliases:
+    - Healthcare
+    - healthcare
+- id: financial_services
+  aliases:
+    - Financial Services
+    - financial_services
+- id: lifesciences
+  aliases:
+    - Life Sciences
+    - lifesciences
+- id: marketplace/product/elastic-prod/elastic-cloud
+  aliases:
+    - Elastic Cloud
+    - marketplace/product/elastic-prod/elastic-cloud
+- id: marketplace/product/databricks-prod/databricks
+  aliases:
+    - Databricks
+    - marketplace/product/databricks-prod/databricks
+- id: earth-engine
+  aliases:
+    - Earth Engine
+    - earth-engine
+- id: datacatalog
+  aliases:
+    - Data Catalog
+    - datacatalog
+- id: dataplex
+  aliases:
+    - Dataplex
+    - dataplex
+- id: datastream
+  aliases:
+    - Datastream
+    - datastream
+- id: looker-studio
+  aliases:
+    - Looker Studio
+    - looker-studio
+- id: networking
+  aliases:
+    - VPC network
+    - networking
+- id: net-services
+  aliases:
+    - Network services
+    - net-services
+- id: hybrid
+  aliases:
+    - Network Connectivity
+    - hybrid
+- id: net-security
+  aliases:
+    - Network Security
+    - net-security
+- id: net-intelligence
+  aliases:
+    - Network Intelligence
+    - net-intelligence
+- id: net-tier
+  aliases:
+    - Network Service Tiers
+    - net-tier
+- id: spectrum-access
+  aliases:
+    - Spectrum Access System
+    - spectrum-access
+- id: telecom-network-automation
+  aliases:
+    - Telecom Network Automation
+    - telecom-network-automation
+- id: distributed-cloud
+  aliases:
+    - Edge
+    - distributed-cloud
+- id: appliances
+  aliases:
+    - Appliances
+    - appliances
+- id: run
+  aliases:
+    - Cloud Run
+    - run
+- id: functions
+  aliases:
+    - Cloud Functions
+    - functions
+- id: appengine
+  aliases:
+    - App Engine
+    - appengine
+- id: api-gateway
+  aliases:
+    - API Gateway
+    - api-gateway
+- id: endpoints
+  aliases:
+    - Endpoints
+    - endpoints
+- id: database-center
+  aliases:
+    - Database Center
+    - database-center
+- id: sql
+  aliases:
+    - SQL
+    - sql
+- id: datastore
+  aliases:
+    - Datastore
+    - datastore
+- id: firestore
+  aliases:
+    - Firestore
+    - firestore
+- id: spanner
+  aliases:
+    - Spanner
+    - spanner
+- id: bigtable
+  aliases:
+    - Bigtable
+    - bigtable
+- id: memorystore
+  aliases:
+    - Memorystore
+    - memorystore
+- id: dbmigration
+  aliases:
+    - Database Migration
+    - dbmigration
+- id: marketplace/product/mongodb/mdb-atlas-self-service
+  aliases:
+    - MongoDB Atlas
+    - marketplace/product/mongodb/mdb-atlas-self-service
+- id: marketplace/product/endpoints/prod.n4gcp.neo4j.io
+  aliases:
+    - Neo4j Aura
+    - marketplace/product/endpoints/prod.n4gcp.neo4j.io
+- id: >-
+    marketplace/product/redis-marketplace-isaas/redis-enterprise-cloud-flexible-plan
+  aliases:
+    - Redis Cloud
+    - >-
+      marketplace/product/redis-marketplace-isaas/redis-enterprise-cloud-flexible-plan
+- id: alloydb
+  aliases:
+    - AlloyDB
+    - alloydb
+- id: logs
+  aliases:
+    - Logging
+    - logs
+- id: monitoring
+  aliases:
+    - Monitoring
+    - monitoring
+- id: errors
+  aliases:
+    - Error Reporting
+    - errors
+- id: traces
+  aliases:
+    - Trace
+    - traces
+- id: profiler
+  aliases:
+    - Profiler
+    - profiler
+- id: capacity
+  aliases:
+    - Capacity Planner
+    - capacity
+- id: apphub
+  aliases:
+    - App Hub
+    - apphub
+- id: security
+  aliases:
+    - Security
+    - security
+- id: compliance
+  aliases:
+    - Compliance
+    - compliance
+- id: cloud-build
+  aliases:
+    - Cloud Build
+    - cloud-build
+    - build
+- id: gcr
+  aliases:
+    - Container Registry
+    - gcr
+- id: code
+  aliases:
+    - Source Repositories
+    - code
+- id: artifacts
+  aliases:
+    - Artifact Registry
+    - artifacts
+- id: deploy
+  aliases:
+    - Cloud Deploy
+    - deploy
+- id: cicd/gitlab
+  aliases:
+    - GitLab
+    - cicd/gitlab
+- id: vertex-ai
+  aliases:
+    - Vertex AI
+    - vertex-ai
+- id: translation
+  aliases:
+    - Translation
+    - translation
+- id: ai/document-ai
+  aliases:
+    - Document AI
+    - ai/document-ai
+- id: ai/retail
+  aliases:
+    - Search for Retail
+    - ai/retail
+- id: talent-solution
+  aliases:
+    - Talent Solution
+    - talent-solution
+- id: gen-app-builder
+  aliases:
+    - Agent Builder
+    - gen-app-builder
+- id: aitasks
+  aliases:
+    - AI Tasks
+    - aitasks
+- id: contact-center-ai-platform
+  aliases:
+    - CCAI Platform
+    - contact-center-ai-platform
+- id: ai/discovery
+  aliases:
+    - Discovery Engine
+    - ai/discovery
+- id: speech
+  aliases:
+    - Speech
+    - speech
+- id: ai/vision-ai
+  aliases:
+    - Vertex AI Vision
+    - ai/vision-ai
+- id: cloudscheduler
+  aliases:
+    - Cloud Scheduler
+    - cloudscheduler
+- id: cloudtasks
+  aliases:
+    - Cloud Tasks
+    - cloudtasks
+- id: workflows
+  aliases:
+    - Workflows
+    - workflows
+- id: eventarc
+  aliases:
+    - Eventarc
+    - eventarc
+- id: integrations
+  aliases:
+    - Application Integration
+    - integrations
+- id: connectors
+  aliases:
+    - Integration Connectors
+    - connectors
+- id: apigee
+  aliases:
+    - Apigee
+    - apigee
+- id: customer-identity
+  aliases:
+    - Identity Platform
+    - customer-identity
+- id: dm
+  aliases:
+    - Deployment Manager
+    - dm
+- id: catalog
+  aliases:
+    - Service Catalog
+    - catalog
+- id: active-assist
+  aliases:
+    - Active Assist
+    - active-assist
+- id: carbon
+  aliases:
+    - Carbon Footprint
+    - carbon
+- id: marketplace/product/confluent-prod/apache-kafka-on-confluent-cloud
+  aliases:
+    - Apache Kafka on Confluent
+    - marketplace/product/confluent-prod/apache-kafka-on-confluent-cloud
+- id: marketplace/product/gcp-marketplace-lve-1/splunk-cloud
+  aliases:
+    - Splunk Cloud
+    - marketplace/product/gcp-marketplace-lve-1/splunk-cloud
+- id: workstations
+  aliases:
+    - Cloud Workstations
+    - workstations
+- id: migration
+  aliases:
+    - Migration Center
+    - migration
+- id: blockchain-node-engine
+  aliases:
+    - Blockchain Node Engine
+    - blockchain-node-engine
+- id: google/maps-apis
+  aliases:
+    - Google Maps Platform
+    - google/maps-apis
+- id: immersive-stream/xr
+  aliases:
+    - Immersive Stream
+    - immersive-stream/xr
+- id: workspace-api
+  aliases:
+    - Google Workspace
+    - workspace-api
+- id: support
+  aliases:
+    - Support
+    - support
