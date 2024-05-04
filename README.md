@@ -15,19 +15,19 @@ GCLOUD SDK has to be installed on your machine and you have to be logged in
 ### Switch between projects
 If you want to list all projects before choosing one
 ```
-pgo s
+gcpq s
 ```
 
 If you want to search for a specific term in the project name or project id
 
 ```
-pgo s searchTerm
+gcpq s searchTerm
 ```
 
 You will see the following output to choose your project rom:
 
 ```
-$ pgo mycompanyName
+$ gcpq mycompanyName
 [0] : mycompany-380102 (mycompany)
 [1] : mycompany-airbyte (mycompany-airbyte)
 [2] : mycompany-chatbot (mycompany-chatbot)
@@ -41,7 +41,7 @@ Enter project number to switch to:
 
 If you want to automatically switch to the first found project
 ```
-pgo searchTerm -a
+gcpq searchTerm -a
 ```
 
 ### Opening Google Cloud Interface quickly
@@ -49,13 +49,13 @@ pgo searchTerm -a
 If you want to open a service quickly. When you don't specify projects, the current Gcloud set project will be used
 
 ```
-pgo bq
+gcpq bq
 ```
 
 Open multiple services at the same time
 
 ```
-pgo bq,dataform,iam,build,gcs
+gcpq bq,dataform,iam,build,gcs
 ```
 
 Aliased have been created for the services. You can see them in the `services.yaml` file of the repo
@@ -64,13 +64,13 @@ Aliased have been created for the services. You can see them in the `services.ya
 Open services on a specific project (you will be able to choose the project matching the search result)
 
 ```
-pgo bq myCompanyName
+gcpq bq myCompanyName
 ```
 
 Open services on a specific project automatically (Will open the first found project)
 
 ```
-pgo bq myCompanyName -a 
+gcpq bq myCompanyName -a 
 ```
 
 Create shortcuts of groups of services
@@ -79,10 +79,15 @@ Create shortcuts of groups of services
 
 
 ```
-pgo myGroupName 
+gcpq myGroupName 
 ```
 
 
 
-# Modifying GCPQU
-If you need to modify the package, you can test your modifications with poetry run pgo
+# Modifying GCPQ
+
+If you need to modify the package, you can test your modifications with poetry run gcpq
+
+```
+poetry run gcpq bq
+```
